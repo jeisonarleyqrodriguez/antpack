@@ -1,0 +1,14 @@
+<div class="content" *ngIf="users">
+    <div *ngFor="let item of users">
+        <span class="subtitle">Name: </span> <span class="tx">{{item.name}}</span>
+        <br>
+
+        <span class="subtitle">Correo: </span> <span class="tx">{{item.email}}</span>
+        <br>
+
+        <span class="subtitle">Direccion: </span> <span class="tx">{{item.address.street}}</span>
+        <br>
+
+        <hr>
+    </div>
+</div>
